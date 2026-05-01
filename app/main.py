@@ -4,7 +4,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.v1.api import api_router
 
 from app.db.session import create_db_and_tables #Change appropriately
-from app.models.user import User  
+from app.models.user import User
+from app.models.inspection import Inspection
+from app.models.detection import Detection
+from app.models.report import Report
+from app.models.image import Image  
 
 app = FastAPI(
     title="AccessiScan API",
